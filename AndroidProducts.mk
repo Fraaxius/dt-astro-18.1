@@ -16,3 +16,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_astro.mk
+
+COMMON_LUNCH_CHOICES := \
+    lineage_astro-eng \
+    lineage_astro-user \
+    lineage_astro-userdebug
