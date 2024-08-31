@@ -1,0 +1,12 @@
+# Camera
+persist.vendor.camera.physical.num=5
+
+# Graphics
+persist.sys.sf.force_brightness_capability=1
+persist.sys.sf.native_mode=1
+
+# Sensors
+ro.vendor.sensors.mot_ltv=true
+persist.vendor.sensors.allow_non_default_discovery=false
+persist.vendor.sensors.enable.mag_uncal=true
+persist.vendor.sensors.firmware_property_read_support=false
