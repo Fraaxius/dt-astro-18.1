@@ -24,8 +24,5 @@ TARGET_SCREEN_DENSITY := 420
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/astro_defconfig
 
-# Properties
-TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
-
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
