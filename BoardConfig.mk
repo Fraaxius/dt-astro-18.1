@@ -21,6 +21,10 @@ DEVICE_PATH := device/motorola/astro
 # Display
 TARGET_SCREEN_DENSITY := 420
 
+# FM
+BOARD_HAVE_QCOM_FM := true
+BOARD_HAS_QCA_FM_SOC := "cherokee"
+
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/astro_defconfig
 
