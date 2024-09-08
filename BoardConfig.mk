@@ -31,6 +31,15 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 # Kernel
 TARGET_KERNEL_CONFIG := vendor/astro_defconfig
 
+# Kernel - prebuilt (for now)
+TARGET_FORCE_PREBUILT_KERNEL := true
+ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
+TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilts/dtb.img
+BOARD_MKBOOTIMG_ARGS += --dtb $(TARGET_PREBUILT_DTB)
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilts/dtbo.img
+endif
+
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth/include
 
