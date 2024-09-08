@@ -28,9 +28,6 @@ BOARD_HAS_QCA_FM_SOC := "cherokee"
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
 
-# Kernel
-TARGET_KERNEL_CONFIG := vendor/astro_defconfig
-
 # Kernel - prebuilt (for now)
 TARGET_FORCE_PREBUILT_KERNEL := true
 ifeq ($(TARGET_FORCE_PREBUILT_KERNEL),true)
